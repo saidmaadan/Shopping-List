@@ -25,5 +25,40 @@ body{
 	line-height: 30px;
 	margin: auto;
 	border-radius: 10px;
-	border: 1px solid #005500;
+	border: 3px solid #005500;
+}
+.list-field button{
+  width: 10%;
+  line-height: 30px;
+  background: red;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+
+}
+.list{
+	display: inline-block;
+	width: 55%;
+	margin: auto;
+}
+#listed-item{
+	width: 80%;
+	line-height: 35px;
+	margin-top: 40px;
+	background: gray;
+	border-radius: 5px;
+}
+.list .manage-list{
+	width: 20%;
+	float: right;
+	margin-top: -35px;
+}
+.list .manage-list button{
+	/*position: absolute;*/
+	display: inline;
+	padding: 10px;
+	margin-left: -5px;
+	background: red;
+	color: white;
 }
