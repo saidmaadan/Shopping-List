@@ -3,7 +3,7 @@
 	padding: 0;
 	-moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+   box-sizing: border-box;
 	-webkit-appearance: none;
 }
 
@@ -15,21 +15,33 @@ body{
 .main{
 	width: 80%;
 	margin: auto;
-	margin-top: 20px;
+	margin-top: 150px;
+}
+h1{
+	color: #11755D;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 50px;
+}
+h1:hover{
+	color: red;
 }
 .list-field{
-	margin-top: 40px;
+	margin-top: 15px;
 }
 .list-field input{
 	width: 50%;
 	line-height: 30px;
 	margin: auto;
 	border-radius: 10px;
-	border: 3px solid #005500;
+	border: 2px solid #005500;
+}
+input:focus{
+	border: 1px solid #11755D;
+	border-radius: 10px;
 }
 .list-field button{
   width: 10%;
-  line-height: 30px;
+  line-height: 32px;
   background: red;
   border-radius: 10px;
   text-align: center;
@@ -38,27 +50,39 @@ body{
 
 }
 .list{
-	display: inline-block;
 	width: 55%;
 	margin: auto;
 }
 #listed-item{
-	width: 80%;
-	line-height: 35px;
-	margin-top: 40px;
-	background: gray;
+	width: 90%;
+	line-height: 1.5;
+	margin-top: 20px;
 	border-radius: 5px;
+	list-style-type: none;
 }
-.list .manage-list{
-	width: 20%;
-	float: right;
-	margin-top: -35px;
+.added-item{
+	width: 100%;
+	position: relative;
+	background-color: #11755D;
+	border-radius: 13px 8px 8px 3px;
+	margin-left: -20px;
+	margin-top: 5px;
+	padding: 8px;
+	cursor: pointer;
+	color: #ffffff;
 }
-.list .manage-list button{
-	/*position: absolute;*/
-	display: inline;
-	padding: 10px;
-	margin-left: -5px;
-	background: red;
-	color: white;
+
+	.added-item img{
+		background: url('../img/deleted.png')no-repeat;
+	  position: absolute;
+	  color: #ffffff;
+		left: 15px;
+		top: 8px;
+		display: none;
+	}
+
+.remove{
+	text-decoration: line-through;
+	font-size: 20px;
+	font-weight: bolder;
 }
